@@ -8,10 +8,3 @@ services:
     volumes:
       - jenkins_home:/var/jenkins_home
 
-volumes:
-  jenkins_home:
-    driver: local
-    driver_opts:
-      type: none
-      device: /var/lib/jenkins
-      o: bind
